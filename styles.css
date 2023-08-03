@@ -1,0 +1,218 @@
+/* NAVIGATION
+	1. Global
+		- Variables
+		- Font face
+		- Base
+	2. Layout
+		- Colors
+		- Backgrounds
+		- Glyphs
+	3. Loader
+*/
+
+/*** 1. GLOBAL ***/
+
+/* Variables
+   ============================= */
+
+   :root {
+    --font-family: 'Source Sans Pro', serif;
+    --font-coiny: 'Coiny', sans-serif;
+    --color-white: #FFFFFF;
+    --color-dark: #071629;
+    --color-gray: #979797;
+    --color-primary: #C271FF;
+  }
+  
+  /* Font
+     ============================= */
+  
+  @font-face {
+    font-family: 'holberton_school-icon';
+    src: url('fonts/holberton_school-icon.eot');
+    src: url('fonts/holberton_school-icon.eot') format('embedded-opentype'),
+    url('fonts/holberton_school-icon.ttf') format('truetype'),
+    url('fonts/holberton_school-icon.woff') format('woff'),
+    url('fonts/holberton_school-icon.svg') format('svg');
+  }
+  
+  /* Base
+     ============================= */
+  
+  body {
+    font-family: var(--font-family) !important;
+  }
+  
+  .off-screen {
+    left: -100vw;
+    position: absolute;
+  }
+  
+  .coiny {
+    font-family: var(--font-coiny);
+  }
+  
+  /* Buttons */
+  
+  .btn, .btn:hover, .btn:focus {
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+  }
+  
+  .btn:hover, .btn:focus {
+    opacity: 0.9;
+  }
+  
+  .btn-shadow {
+    box-shadow: 0 0 10px 5px gray;
+  }
+  
+  .slick-prev, .slick-next {
+    height: 60px;
+    width: 30px;
+  }
+  
+  /* Navigation Links */
+  
+  li a {
+    color: var(--color-dark);
+  }
+  
+  li a:hover, li a:focus {
+    color: var(--color-primary) !important;
+    text-decoration: none;
+  }
+  
+  .current:after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--color-white);
+  }
+  
+  /* Courses Form */
+  
+  .search {
+    outline: 0;
+    opacity: .7;
+    color: var(--color-white);
+  }
+  
+  ::placeholder {
+    color: var(--color-white);
+  }
+  
+  /*** 2. LAYOUT ***/
+  
+  /* Backgrounds
+     ============================= */
+  
+  .homepage {
+    background-image: url('images/pic_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  
+  .pricing {
+    background-image: url('images/pic_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  
+  .courses {
+    background-image: url('images/pic_3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  
+  /* Colors
+     ============================= */
+  
+  .purple-bg {
+    background-color: var(--color-primary) !important;
+  }
+  
+  .dark-bg {
+    background-color: var(--color-dark);
+  }
+  
+  .purple {
+    color: var(--color-primary);
+  }
+  
+  .border-gray {
+    border-color: var(--color-gray) !important;
+  }
+  
+  /* Glyphs
+     ============================= */
+  
+  /* Navbar */
+  
+  .navbar-icon:before {
+    font-family: 'holberton_school-icon';
+    content: "\e911";
+    color: var(--color-white);
+  }
+  
+  /* Courses Form */
+  
+  .magnify:before {
+    font-family: 'holberton_school-icon';
+    content: "\e912";
+    color: var(--color-dark);
+    padding: 10px;
+  }
+  
+  /* Footer */
+  
+  .fb-icon:before {
+    font-family: 'holberton_school-icon';
+    content: "\e908";
+    color: var(--color-white);
+  }
+  
+  .twitter-icon:before {
+    font-family: 'holberton_school-icon';
+    content: "\e90f";
+    color: var(--color-white);
+  }
+  
+  .insta-icon:before {
+    font-family: 'holberton_school-icon';
+    content: "\e90a";
+    color: var(--color-white);
+  }
+  
+  .search:before {
+    font-family: 'holberton_school-icon';
+    content: "\e912";
+    color: var(--color-dark);
+  }
+  
+  /*** 3. LOADER ***/
+  
+  /* Loader
+     ============================= */
+  
+  .loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #C271FF;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
