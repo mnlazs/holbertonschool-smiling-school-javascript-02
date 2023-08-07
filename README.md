@@ -141,10 +141,7 @@ function displayLoading(loading, tag) {
 }
 ```
 
-Join Holberton SmilingSchool now and let's get schooled together! 😄📚🚀
-
-Feel free to explore our website and register for free to access exclusive content. 🆓💻
-
-### 👉 [Visit Holberton SmilingSchool](https://www.smilingschool.io) 👈
-
 **Happy Learning!** 😊🎉
+
+## Author
+- **Manuel Zambrano** - [mnlazs](https://github.com/mnlazs) :rage4:
